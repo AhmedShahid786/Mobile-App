@@ -1,26 +1,12 @@
 import { View, Text, Image } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { myColors } from "@/constants/Colors";
-import profilePic from "../../assets/images/profilePic.jpeg";
+import profilePic2 from "../../assets/images/profilePic2.jpg";
+import profilePic3 from "../../assets/images/profilePic3.jpg";
+import profilePic4 from "../../assets/images/profilePic4.jpg";
+import profilePic5 from "../../assets/images/profilePic5.jpg";
 
-const actionPaneData = [
-  {
-    iconName: "send",
-    title: "Send",
-  },
-  {
-    iconName: "arrow-down-left",
-    title: "Recieve",
-  },
-  {
-    iconName: "trending-up",
-    title: "Stocks",
-  },
-  {
-    iconName: "trending-up",
-    title: "Stocks",
-  },
-];
+const FavPaneData = [profilePic2, profilePic3, profilePic4, profilePic5];
 
 export default function Favourites() {
   return (
@@ -67,9 +53,10 @@ export default function Favourites() {
           flexDirection: "row",
         }}
       >
-        {actionPaneData.map((paneData, i) => (
+        {FavPaneData.map((paneData, i) => (
           <Image
-            source={profilePic}
+            key={i}
+            source={paneData}
             style={{
               width: "20%",
               height: "60%",

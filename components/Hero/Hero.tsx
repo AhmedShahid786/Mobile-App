@@ -1,6 +1,5 @@
 import { View, Text, StyleSheet } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
-import { myColors } from "@/constants/Colors";
 import CreditCard from "../CreditCard/CreditCard";
 
 export default function Hero() {
@@ -10,7 +9,6 @@ export default function Hero() {
         flex: 3,
         alignItems: "center",
         justifyContent: "center",
-        width: "100%",
       }}
     >
       {/* Heading View */}

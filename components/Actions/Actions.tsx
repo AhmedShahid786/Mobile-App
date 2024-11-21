@@ -1,6 +1,6 @@
 import { View } from "react-native";
-import { myColors } from "@/constants/Colors";
 import ActionPane from "../ActionPane/ActionPane";
+import { myColors } from "@/constants/Colors";
 
 const actionPaneData = [
   {
